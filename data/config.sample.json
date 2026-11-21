@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "host": "192.168.1.10",
+  "port": 10023,
+  "showMode": false,
+  "requestTimeoutMs": 1000,
+  "batchTimeoutMs": 500,
+  "note": "No secrets live in this file. Host and port seed from environment on first boot only."
+}

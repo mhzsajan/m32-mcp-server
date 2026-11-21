@@ -1,0 +1,50 @@
+{
+  "name": "m32-mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server and diagnostic tooling for the Midas M32 digital mixing console",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "midas",
+    "m32",
+    "x32",
+    "osc",
+    "mixing-console"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "m32-mcp-server": "./dist/cli.js"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "docs/",
+    ".env.sample",
+    "data/config.sample.json"
+  ],
+  "engines": {
+    "node": ">=22.6"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/cli.js",
+    "test": "node --import tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "live:check": "tsx scripts/live-check.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.3"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}
