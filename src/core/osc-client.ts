@@ -45,7 +45,7 @@ export class M32OscClient {
     this.socket = dgram.createSocket("udp4");
     this.socket.on("error", (err) => {
       // Stdout is reserved for the MCP protocol. Diagnostics go to stderr.
-      process.stderr.write("m32-mcp-server: UDP socket error: " + err.message + "\n");
+      process.stderr.write("Midas M32 MCP Server: UDP socket error: " + err.message + "\n");
     });
     this.socket.on("message", (data) => this.onMessage(data));
     this.ready = new Promise<void>((resolve, reject) => {

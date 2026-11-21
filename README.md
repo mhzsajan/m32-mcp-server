@@ -1,6 +1,6 @@
-# M32 MCP Server
+# Midas M32 MCP Server
 
-A small, independent MCP server for the Midas M32 digital mixing console.
+Midas M32 MCP Server is a small, independent MCP server for the Midas M32 digital mixing console.
 
 It is a **setup and diagnostic tool**. It is not part of the live show signal path. The show must keep working with the console front panel and existing phone canvases even if this server, AI, MCP or the internet are unavailable.
 

@@ -6,7 +6,7 @@ import { M32OscClient } from "./core/osc-client.js";
 import type { M32Context } from "./core/write.js";
 import { registerAllTools } from "./tools/index.js";
 
-export const SERVER_NAME = "m32-mcp-server";
+export const SERVER_NAME = "Midas M32 MCP Server";
 export const SERVER_VERSION = "0.1.0";
 
 export interface RunOptions {

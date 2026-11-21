@@ -5,5 +5,5 @@
   "showMode": false,
   "requestTimeoutMs": 1000,
   "batchTimeoutMs": 500,
-  "note": "No secrets live in this file. Host and port seed from environment on first boot only."
+  "note": "Midas M32 MCP Server config. No secrets live in this file. Host and port seed from environment on first boot only."
 }

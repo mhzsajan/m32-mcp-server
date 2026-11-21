@@ -1,7 +1,7 @@
 {
-  "name": "m32-mcp-server",
+  "name": "midas-m32-mcp-server",
   "version": "0.1.0",
-  "description": "MCP server and diagnostic tooling for the Midas M32 digital mixing console",
+  "description": "Midas M32 MCP Server - MCP server and diagnostic tooling for the Midas M32 digital mixing console",
   "keywords": [
     "mcp",
     "model-context-protocol",
@@ -16,7 +16,7 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "m32-mcp-server": "./dist/cli.js"
+    "midas-m32-mcp-server": "./dist/cli.js"
   },
   "files": [
     "dist/",

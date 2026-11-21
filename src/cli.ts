@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// M32 MCP server entry point. stdio is the only transport: this is a setup and
+// Midas M32 MCP Server entry point. stdio is the only transport: this is a setup and
 // diagnostic tool, not a show-time dependency. Stdout is reserved for MCP.
 
 import { parseArgs } from "node:util";
@@ -11,7 +11,7 @@ import { runServer, SERVER_NAME, SERVER_VERSION } from "./server.js";
 const USAGE = `${SERVER_NAME} v${SERVER_VERSION}
 
 Usage
-  m32-mcp-server [options]
+  midas-m32-mcp-server [options]
 
 Options
   -h, --help             Show this help and exit.

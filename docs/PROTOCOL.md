@@ -1,4 +1,4 @@
-# M32 OSC protocol notes
+# Midas M32 MCP Server - OSC Protocol Notes
 
 All facts below were verified by live reads against the console at `192.168.1.10`, UDP port `10023`, on 2026-11-21. Anything not observed is marked as unsupported; nothing is guessed.
 

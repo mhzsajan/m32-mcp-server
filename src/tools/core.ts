@@ -11,7 +11,7 @@ export function registerCoreTools(server: McpServer, ctx: M32Context): void {
     "m32_status",
     {
       annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: true },
-      title: "Midas M32: connection status",
+      title: "Midas M32 MCP Server: connection status",
       description:
         "Health check for the M32. Reads /info and /status live, reports reachability and round-trip " +
         "latency, the configured host/port and local UDP reply port, the persisted config path, show mode, " +
@@ -68,7 +68,7 @@ export function registerCoreTools(server: McpServer, ctx: M32Context): void {
     "m32_get",
     {
       annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: true },
-      title: "Midas M32: read one leaf",
+      title: "Midas M32 MCP Server: read one leaf",
       description:
         "Reads one OSC leaf and returns its typed value. Any address starting with / is accepted; an " +
         "address the console does not answer is reported as an error, never as a made-up value. Known " +
@@ -92,7 +92,7 @@ export function registerCoreTools(server: McpServer, ctx: M32Context): void {
     "m32_get_many",
     {
       annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: true },
-      title: "Midas M32: read many leaves",
+      title: "Midas M32 MCP Server: read many leaves",
       description:
         "Reads up to 200 OSC leaves in one tool call. Queries are sent in small chunks and replies are " +
         "matched by the address the console echoes. Paths that do not answer appear under `errors`; " +
@@ -113,7 +113,7 @@ export function registerCoreTools(server: McpServer, ctx: M32Context): void {
     "m32_dump",
     {
       annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: true },
-      title: "Midas M32: dump one strip",
+      title: "Midas M32 MCP Server: dump one strip",
       description:
         "Reads every known leaf under one indexed strip, e.g. /ch/01, /auxin/01, /bus/01, /mtx/01, " +
         "/dca/1, /main/st or /main/m. Only leaves verified on this console are included; paths the " +

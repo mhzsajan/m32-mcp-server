@@ -1,4 +1,4 @@
-# Tool reference
+# Midas M32 MCP Server - Tool Reference
 
 All tools return a plain-text summary in `content` and a machine-readable object in `structuredContent`. Failures from the console are returned as tool results with `isError: true`, not as transport errors.
 

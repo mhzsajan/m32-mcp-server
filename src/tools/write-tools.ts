@@ -13,7 +13,7 @@ export function registerWriteTools(server: McpServer, ctx: M32Context): void {
     "m32_set",
     {
       annotations: { readOnlyHint: false, destructiveHint: false, idempotentHint: true, openWorldHint: true },
-      title: "Midas M32: verified set",
+      title: "Midas M32 MCP Server: verified set",
       description:
         "Writes one M32 leaf, then reads it back. The result gives previous, sent, stored and match for " +
         "the key and status is MISMATCH if the console stored something else. Numeric values must be " +
@@ -43,7 +43,7 @@ export function registerWriteTools(server: McpServer, ctx: M32Context): void {
     "m32_bulk_set",
     {
       annotations: { readOnlyHint: false, destructiveHint: false, idempotentHint: true, openWorldHint: true },
-      title: "Midas M32: verified bulk set for one strip",
+      title: "Midas M32 MCP Server: verified bulk set for one strip",
       description:
         "Sets several keys under one strip base (e.g. baseNode '/ch/01' with assignments " +
         '{"mix/fader": 0.7, "config/name": "Lead Vox"}). Keys may use / or . as separator. Every key is ' +

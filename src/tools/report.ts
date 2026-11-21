@@ -9,7 +9,7 @@ export function registerReportTool(server: McpServer, ctx: M32Context): void {
     "m32_console_report",
     {
       annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: true },
-      title: "Midas M32: read-only console report",
+      title: "Midas M32 MCP Server: read-only console report",
       description:
         "A read-only snapshot for handoff or diagnosis: live /info and /status, every strip's name, " +
         "fader and on/off state for channels, aux inputs, buses, matrices, DCAs and main outputs, plus " +

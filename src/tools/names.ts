@@ -18,7 +18,7 @@ export function registerNameTools(server: McpServer, ctx: M32Context): void {
     "m32_list_names",
     {
       annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: true },
-      title: "Midas M32: list all strip names",
+      title: "Midas M32 MCP Server: list all strip names",
       description:
         "Reads every channel, aux input, bus, matrix, DCA and main stereo name in one call and returns " +
         "them grouped with their OSC paths. Names that did not answer are reported under `errors` as " +

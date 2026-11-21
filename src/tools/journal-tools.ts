@@ -12,7 +12,7 @@ export function registerJournalTools(server: McpServer, ctx: M32Context): void {
     "m32_history",
     {
       annotations: { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: true },
-      title: "Midas M32: write history",
+      title: "Midas M32 MCP Server: write history",
       description:
         "Lists the most recent write batches this server made, newest first, with each key's previous " +
         "and new value and whether it was audible. Batches survive restarts; those from another server " +
@@ -42,7 +42,7 @@ export function registerJournalTools(server: McpServer, ctx: M32Context): void {
     "m32_undo",
     {
       annotations: { readOnlyHint: false, destructiveHint: false, idempotentHint: false, openWorldHint: true },
-      title: "Midas M32: undo a write batch",
+      title: "Midas M32 MCP Server: undo a write batch",
       description:
         "Restores every key in a journaled batch to the value it held before that batch. Defaults to the " +
         "most recent batch from this server session that has not been undone; older batches need their " +
@@ -93,7 +93,7 @@ export function registerJournalTools(server: McpServer, ctx: M32Context): void {
     "m32_show_mode",
     {
       annotations: { readOnlyHint: false, destructiveHint: false, idempotentHint: true, openWorldHint: false },
-      title: "Midas M32: show-mode safety gate",
+      title: "Midas M32 MCP Server: show-mode safety gate",
       description:
         "Reads or changes the persisted show mode. With show mode ON, every audible write (faders, " +
         "mutes, pan, input source) is refused unless the caller passes confirm: true. Cosmetic writes " +
